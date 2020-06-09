@@ -8,10 +8,10 @@ You find a PDF of the paper on arXiv: [https://arxiv.org/abs/2006.00339](https:/
 If you find our work useful, please cite:
 ```
 @article{ruff2020rethinking, 
-  title	= {Rethinking Assumptions in Deep Anomaly Detection}, 
-  author	= {Ruff, Lukas and Vandermeulen, Robert A and Franks, Billy Joe and M{\"u}ller, Klaus-Robert and Kloft, Marius}, 
+  title   = {Rethinking Assumptions in Deep Anomaly Detection}, 
+  author  = {Ruff, Lukas and Vandermeulen, Robert A and Franks, Billy Joe and M{\"u}ller, Klaus-Robert and Kloft, Marius}, 
   journal = {arXiv preprint arXiv:2006.00339}, 
-  year		= {2020}
+  year    = {2020}
 }
 ```
 
