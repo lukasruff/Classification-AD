@@ -74,13 +74,12 @@ class TinyImages(VisionDataset):
         self.transform = transform
 
         # Draw random permutation of indices of self.size if not full dataset
+        self.shuffle_idxs = True
         if self.size < 79302016:
             random.seed(seed)
             self.idxs = random.sample(range(79302016), self.size)  # set seed to have a fair comparison across models
-            self.shuffle_idxs = True
         else:
-            self.idxs = range(79302016)
-            self.shuffle_idxs = False
+            self.idxs = list(range(79302016))
 
         if download:
             self.download()

@@ -107,13 +107,12 @@ class MyImageNet22K(ImageFolder):
                     pass
 
         # Draw random permutation of indices of self.size if not full dataset
+        self.shuffle_idxs = True
         if self.size < 14155519:
             random.seed(seed)  # set seed to have a fair comparison across models
             self.idxs = random.sample(range(len(self.samples)), self.size)
-            self.shuffle_idxs = True
         else:
-            self.idxs = range(len(self.samples))
-            self.shuffle_idxs = False
+            self.idxs = list(range(len(self.samples)))
 
         self.offset = 0  # offset index
 
