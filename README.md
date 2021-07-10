@@ -1,24 +1,23 @@
 # Rethinking Assumptions in Deep Anomaly Detection
 
-This repository provides the code for the methods and experiments presented in our preprint 'Rethinking Assumptions in Deep Anomaly Detection.'
+This repository provides the code for the methods and experiments presented in our ICML UDL 2021 workshop paper 'Rethinking Assumptions in Deep Anomaly Detection.'
 
 ## Citation and Contact
 
 You find a PDF of the paper on arXiv: [https://arxiv.org/abs/2006.00339](https://arxiv.org/abs/2006.00339).
 If you find our work useful, please cite:
 ```
-@article{ruff2020rethinking, 
-  title   = {Rethinking Assumptions in Deep Anomaly Detection}, 
-  author  = {Ruff, Lukas and Vandermeulen, Robert A and Franks, Billy Joe and M{\"u}ller, Klaus-Robert and Kloft, Marius}, 
-  journal = {arXiv preprint arXiv:2006.00339}, 
-  year    = {2020}
+@inproceedings{ruff2020rethinking,
+  title     = {Rethinking Assumptions in Deep Anomaly Detection},
+  author    = {Ruff, Lukas and Vandermeulen, Robert A and Franks, Billy Joe and M{\"u}ller, Klaus-Robert and Kloft, Marius},
+  booktitle = {ICML 2021 Workshop on Uncertainty \& Robustness in Deep Learning},
+  year      = {2021}
 }
 ```
 
 ## Abstract
 
-> > Though anomaly detection (AD) can be viewed as a classification problem (nominal vs. anomalous) it is usually treated in an unsupervised manner since one typically does not have access to, or it is infeasible to utilize, a dataset that sufficiently characterizes what it means to be "anomalous." In this paper we present results demonstrating that this intuition surprisingly does not extend to deep AD on images. For a recent AD benchmark on ImageNet, classifiers trained to discern between normal samples and just a few (64) random natural images are able to outperform the current state of the art in deep AD. We find that this approach is also very effective at other common image AD benchmarks. Experimentally we discover that the multiscale structure of image data makes example anomalies exceptionally
-informative.
+> > Though anomaly detection (AD) can be viewed as a classification problem (nominal vs. anomalous) it is usually treated in an unsupervised manner since one typically does not have access to, or it is infeasible to utilize, a dataset that sufficiently characterizes what it means to be "anomalous." In this paper we present results demonstrating that this intuition surprisingly seems not to extend to deep AD on images. For a recent AD benchmark on ImageNet, classifiers trained to discern between normal samples and just a few (64) random natural images are able to outperform the current state of the art in deep AD. Experimentally we discover that the multiscale structure of image data makes example anomalies exceptionally informative.
 
 
 ## Installation
